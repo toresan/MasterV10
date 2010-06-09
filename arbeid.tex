@@ -1,0 +1,53 @@
+\section{Arbeid}
+\subsection{Utstyr}
+Følgjande utstyr blei nytta i samband med dette prosjektet:
+\begin{itemize}
+	\item Bandelin Sonorex DK 255 P \textit{(Serienr.: 782.00048887.010)}
+	\item Wavetek 178 \unit{50}{\mega\hertz} Programmable Waveform Synthesizer \textit{(Serienr.: AC6590409)}
+	\item Instruments Inc. Kilowatt Amplifier LDC3-3A\textit{(Serienr.: 001)}
+	\item Skipper $11\text{ x }{19}^\circ$ Transduser \textit{(Serienr.: ikkje tilgjengeleg)}
+	\item Brüel \& Kjær 8103 Hydrofon \textit{(Serienr.: 1080718)}
+	\item Brüel \& Kjær 4223 Hydrofon Kalibrator \textit{(Serienr.: 1152567+)}
+	\item Brüel \& Kjær 2626 Conditioning Amplifier \textit{(Serienr.: 562538)}
+	\item LeCroy 9410 Dual \unit{150}{\mega\hertz} Oscilloscope \textit{(Serienr.: 94102589)}
+	\item Ono Sokki Dual Channel FFT Analyzer CF-940 \textit{(Serienr.: 71011552)}
+	\item Instruments Inc. Kilowatt Amplifier M4 \textit{(Serienr. 011)}
+\end{itemize}
+
+Og vidare ein Macbook Pro med følgjande programvare:
+
+\begin{itemize}
+	\item Logic Pro 8.0.2
+	\item Matlab R2009b
+\end{itemize}
+
+Det kan vere viktig å merke seg avgrensingane ved ustyret i denne lista. Ved måling gjennom RME lydkortet og vidare til PC har vi ei øvre grense for kva frekvensar vi kan måle på grunn av lydkortet sin maksimale samplingsrate på \unit{192}{\kilo\hertz} som ved Nyquist sitt teorem presentert på side \pageref{nyquist} gjev oss den øvre grensa på \unit{96}{\kilo\hertz}. Ladningsforsterkaren til Brüel \& Kjær gjev oss òg ein øvre frekvens ved måling på oscilloskopen som i manualen er gitt som \unit{200}{\kilo\hertz} \cite{ladnforsterker} og i tillegg har hydrofonen ein øvre frekvens gitt i manualen som \unit{180}{\kilo\hertz} \cite{hydrofon}. Transduseren har høgast verknadsgrad ved \unit{38}{\kilo\hertz} \cite{skipper}. 
+
+\subsection{Framgangsmåte}
+
+\begin{figure}[h] \setlength{\unitlength}{0.14in}	% selecting unit length
+\centering	% used for centering Figure 
+\begin{picture}(48,11)	% picture environment with the size (dimensions) 32 length units wide, and 15 units high. 
+\put(-2,6){\framebox(6,3){Signalgen.}}
+\put(6,6){\framebox(6,3){Forsterker}}
+\put(14,6){\framebox(6,3){Transduser}}
+\put(24,6){\framebox(6,3){Hydrofon}}
+\put(32,6){\framebox(6,3){Ladn.forst.}}
+\put(40,6){\framebox(6,3){FFT Anal.}}
+\put(19,1){\framebox(6,3){Oscilloskop}}
+ \put(4,7.5){\vector(1,0){2}} 
+\put(12,7.5){\vector(1,0){2}}
+\multiput(20,7.5)(0.5,0){7}{\line(1,0){0.4}} 
+\put(23.6,7.5){\vector(1,0){0.4}} 
+\put(30,7.5){\vector(1,0){2}} 
+\put(38,7.5){\vector(1,0){2}} 
+\put(9,2.5){\vector(1,0){10}} 
+\put(9,2.5){\line(0,1){3.5}}
+\put(35,2.5){\vector(-1,0){10}} 
+\put(35,2.5){\line(0,1){3.5}}
+\put(20.8,8.5) {Vatn}
+\put(13,5){\dashbox{0.5}(18,5){}}
+\end{picture} 
+\caption{Signalkjede i måleoppsett} % title of the Figure 
+\label{fig:signalkjede}	% label to refer figure in text 
+\end{figure}

@@ -1,0 +1,89 @@
+\documentclass[12pt,norsk]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[nynorsk]{babel}
+%\usepackage{float}
+%\usepackage{endfloat}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+%\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for rotated page geometry
+\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{subfigure}
+%\usepackage{placeins}
+\usepackage[amssymb]{SIunits}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{IEEEtran}
+\usepackage{epstopdf}
+\usepackage[framed, numbered]{mcode}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Bruk av ultralyd til fjerning av biofilm.}
+\author{Tore Sandbakk \and Veileder: Tone Berg\\\\Institutt for Elektronikk og Telekommunikasjon\\Noregs Teknisk- og Naturvitenskaplege Universitet}
+\date{Trondheim, \today}                                           % Activate to display a given date or no date
+
+\begin{document}
+%\maketitle
+%\thispagestyle{empty}
+\input{framside}
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\input{oppgavetekst}
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\input{abstract}
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\tableofcontents
+\clearpage
+
+\newpage
+\thispagestyle{empty}
+\listoffigures
+\thispagestyle{empty}
+
+\newpage
+\setcounter{page}{1} 
+\input{innleiing}
+\clearpage
+
+\input{teori}
+\clearpage
+
+\input{arbeid}
+\clearpage
+
+\input{resultat}
+\clearpage
+
+\input{diskusjon}
+\clearpage
+
+\input{konklusjon}
+\clearpage
+
+\newpage
+\appendix
+
+\newpage
+\input{kode}
+\clearpage
+
+\newpage
+\input{tabellar}
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{Bibliografi} 
+
+\end{document} 
